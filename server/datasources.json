@@ -1,0 +1,20 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "dbapps": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/loopapps",
+    "database": "loopapps",
+    "password": "",
+    "name": "dbapps",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "dynamo": {
+    "name": "dynamo",
+    "connector": "loopback-connector-dynamodb"
+  }
+}

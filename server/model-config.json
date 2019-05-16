@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Application": {
+    "dataSource": "dbapps"
+  },
+  "User": {
+    "dataSource": "dbapps"
+  },
+  "AccessToken": {
+    "dataSource": "dbapps",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "dbapps",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "dbapps",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "dbapps",
+    "public": false
+  },
+  "Test": {
+    "dataSource": "dbapps",
+    "public": true
+  },
+  "Apps": {
+    "dataSource": "dynamo",
+    "public": true
+  }
+}
